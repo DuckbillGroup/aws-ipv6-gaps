@@ -1,6 +1,6 @@
 # AWS Services That Do Not Support IPv6
 
-Now that AWS [is charging per IPv4 address]() as of February 2024, suddenly lack of IPv6 support has economic consequences for AWS customers. Thus, the reason for this page is to highlight IPv6 gaps across AWS's service offerings.
+Now that AWS [is charging per IPv4 address](https://aws.amazon.com/blogs/aws/new-aws-public-ipv4-address-charge-public-ip-insights/) as of February 2024, suddenly lack of IPv6 support has economic consequences for AWS customers. Thus, the reason for this page is to highlight IPv6 gaps across AWS's service offerings.
 
 | Service | Corey's Commentary |
 | ---- | ---- |
