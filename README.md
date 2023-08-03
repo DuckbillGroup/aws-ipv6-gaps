@@ -10,3 +10,4 @@ Now that AWS [is charging per IPv4 address](https://aws.amazon.com/blogs/aws/new
 | EC2 Instance Connect | EC2 Instance Connect doesn't support IPv6, full stop. That means that for this to work you've gotta use IPv4, and also get yourself into the privately-addressed range via VPN, Direct Connect, Arcane Prayers, etc. |
 | Auto Scaling Groups | Auto Scaling Groups can only register/de-register instances to target groups via 'instance-id' and not 'ip-address', and 'instance-id' only supports IPv4 targets. |
 | Systems Manager | The SSM Agent requires IPv4 access to Systems Manager endpoints in order to function |
+| Kinesis/SQS | Examples of possible high volume AWS services, not supporting IPv6.  Requiring you to make the trade of between paying $3.50 a month for every ec2 instance using it, or spawning a VPC endpoint at 10.5$ a month for every AZ and 0.01$ per GB.  And do not forget to update all your code/config to use these new endpoints. |
