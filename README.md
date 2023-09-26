@@ -11,6 +11,8 @@ Now that AWS [is charging per IPv4 address](https://aws.amazon.com/blogs/aws/new
 | Auto Scaling Groups | Auto Scaling Groups can only register/de-register instances to target groups via 'instance-id' and not 'ip-address', and 'instance-id' only supports IPv4 targets. |
 | Systems Manager | The SSM Agent requires IPv4 access to Systems Manager endpoints in order to function |
 | Kinesis/SQS | Examples of possible high volume AWS services, not supporting IPv6.  Requiring you to make the trade of between paying $3.50 a month for every ec2 instance using it, or spawning a VPC endpoint at 10.5$ a month for every AZ and 0.01$ per GB.  And do not forget to update all your code/config to use these new endpoints. |
+| App Runner | No option to select IPv6.  Defaults to IPv4. |
+| Amazon EKS | Security groups for Pods can't be used with clusters configured for the IPv6 family that contain Amazon EC2 nodes. |
 | App Runner | No option to select IPv6 for ingress.  Defaults to IPv4. No support for IPv6 VPC connectors. |
 | API Gateway | IPv4 only (for incoming requests; for HTTP proxy requests; for VPC links) |
 | ECR (public and private) | No IPv6 endpoints to pull from, so you need IPv4 for your 17+ services that run containers |
